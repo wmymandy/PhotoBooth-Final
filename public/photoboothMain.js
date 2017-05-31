@@ -527,6 +527,7 @@ function labelFilter(inputLabel){
   // if(control.withLabel === 0){
     for(i = 0; i < imageNum; i++){
       var labels = imageArray[i].labels;
+      console.log(labels);
       var labelArr = labels.split(";");
       console.log(labelArr);
 
@@ -595,7 +596,7 @@ function getLabelsFromApi(imageName, id){
   oReq.onload = function() {
     var jsonObj = JSON.parse(oReq.responseText);
     var labelArr = jsonObj.labels.split(";");
-    imageArray[id].labels = labelArr;
+    imageArray[id].labels = jsonObj.labels;
     insertLabelsToHtml(id,labelArr);
     return;
   }

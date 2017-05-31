@@ -28,5 +28,5 @@
 ---
 ### Extra Credits:
 
-- We have attmepted the extra credits, we have finished both filter by favorite and the progress bar. 
+- We have attmepted the extra credits, both filter by favorite and the progress bar. 
 

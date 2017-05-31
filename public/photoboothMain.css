@@ -1,0 +1,421 @@
+/*css for photoboothMain.html*/
+@font-face {
+  font-family:"GoudyStd","GoudyStd-Italic","GoudyStd-BoldItalic","GoudyStd-Bold";
+  src:url("photobooth/fontGoudy/GoudyStd.otf"),
+    url("photobooth/fontGoudy/GoudyStd-Italic.otf")，
+    url("photobooth/fontGoudy/GoudyStd-BoldItalic.otf")，
+    url("photobooth/fontGoudy/GoudyStd-Bold.otf")；
+  font-stretch: expanded;
+  font-style: normal;
+}
+
+body{
+  font-family:"GoudyStd","GoudyStd-Italic","GoudyStd-BoldItalic","GoudyStd-Bold";
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  /*align-items: center;
+  justify-content: center;*/
+  color: #7B503F;
+}
+
+img#headerImg{
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-self: stretch;
+    width: 100%;
+}
+
+hr{
+  margin: 0;
+  border: 1px solid #7B503F;
+  width: 100%;
+}
+
+div.pictures{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  background-color: #885541;
+  margin-left: auto;
+  width: 40%;
+}
+
+div#showForUpload{
+  display: flex;
+  flex-direction: column;
+  /*margin-left: 15px;
+  margin-top: 15px;*/
+  /*margin: 10px;*/
+  background-color: #CAB9B2;
+  display: none;
+  padding-top: 25px;
+}
+
+img.navImage{
+  width: 48px;
+  height: 45px;
+  overflow: hidden;
+  background-color: Transparent;
+  border: none;
+}
+
+img.navImage2{
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  background-color: Transparent;
+  border: none;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+div.nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+input{
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+button.firstLevel{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: Transparent;
+  border: none;
+  font-size: 20px;
+}
+
+button#uploadButton{
+  width: 70px;
+  height: 30px;
+  background-color: #7B503F;
+  color: white;
+  border:1px solid black;
+  font-size: 15px;
+  margin: 15px;
+}
+
+label{
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background-color: #7B503F;
+  color: white;
+  margin:15px;
+  padding: 10px 10px 3px 10px;
+  border: 1px solid black;
+}
+
+input#fileSelector{
+  opacity:0;
+  position: absolute;
+  z-index: -1;
+}
+
+div.indiPicture{
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: flex-start;
+  margin: 20px;
+  flex-shrink: 0;
+}
+
+div.indiPicture button{
+  background-color: #7B503F;
+  color: white;
+  width: 40px;
+}
+
+div.indiPicture label{
+  background-color: grey;
+}
+
+.photo1{
+  width: 200px;
+  height: 200px;
+}
+
+div.addButton{
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+}
+
+input.buttons{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+  background-color: transparent;
+  background: url('photobooth/optionsTriangle.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 55px;
+  width: 55px;
+}
+
+div.showForOption{
+  display: flex;
+  flex-direction: column;
+  background-color: #885541;
+  display: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid black;
+}
+
+.optionform{
+  display: flex;
+  flex-direction: column;
+}
+
+.options{
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  text-align: left;
+  height: 30px;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+.optionButton2{
+  margin: auto;
+  padding-left: 100px;
+  border:none;
+  background-color: transparent;
+  height: 55px;
+  width: 55px;
+}
+
+.optionLine{
+  border: 1px solid black;
+}
+
+div.labels{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 200px;
+  /*display: none;*/
+  /*border: black;*/
+}
+
+p.labelList{
+  display: flex;
+  flex-direction: row;
+  min-height: 30px;
+  min-width: 200px;
+  max-width: 200px;
+  flex-wrap: wrap;
+  /* background-color: #CAB9B2; */
+  background-color: white;
+  margin-bottom: 0;
+  font-size: 15pt;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.deleteLabel {
+  padding-left: 10px;
+  padding-right: 8px;
+}
+
+.showInput {
+  display: none;
+}
+
+input.indilable{
+  display: inline;
+  width: 200px;
+  height: 25px;
+  background-color: white;
+  margin-left: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  border: 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+img.removeButton{
+  height: 10px;
+  width: 10px;
+  padding-top: 8px;
+  padding-right: 1px;
+  padding-left: 5px;
+  display: none;
+}
+
+#fileName {
+  padding-top:15px;
+  padding-left:15px;
+  overflow: hidden;
+}
+
+#fileName2 {
+  padding-top:15px;
+  padding-left:15px;
+  overflow: hidden;
+}
+
+#filter{
+  width: 60%;
+  height: 35px;
+  margin-left: 10px;
+}
+
+#MenuForMobile{
+  display: none;
+}
+
+#FilterWord{
+  display: none;
+}
+
+#FilterWord{
+  width: 100px;
+  height: 40px;
+  color: white;
+  padding-left: 10px;
+  font-size: 20px;
+  border: none;
+  background-color:#885541;
+}
+
+.filterButtonList{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.filterButton{
+  width: 70px;
+  height: 30px;
+  background-color: #7B503F;
+  color: white;
+  border:1px solid black;
+  font-size: 11px;
+}
+
+#showForFilter{
+  display: flex;
+  flex-direction: column;
+  background-color: #CAB9B2;
+  display: none;
+  padding: 15px 10px 15px 10px;
+}
+
+#Secondfilter{
+  border:1px solid #7B503F;
+  height: 30px;
+  width: 82%;
+  margin-left: 20px;
+}
+
+#MobileUpload{
+  display: none;
+  background-color: #CAB9B2;
+}
+
+.MobileUploadList{
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+
+#MobileuploadButton{
+  width: 70px;
+  height: 30px;
+  background-color: #7B503F;
+  color: white;
+  border:1px solid black;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.MobileBut{
+  background-color: Transparent;
+  border: none;
+}
+
+#MobileFilter{
+  display: none;
+  background-color: #CAB9B2; 
+  padding: 15px;
+}
+
+.MobileFilterList{
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+
+@media (max-width: 480px){
+
+  #menuBar,#divide{
+    display: none;
+  }
+
+  #headerImg{
+    align-self: center;
+  }
+
+  .pictures{
+    justify-content: center;
+  }
+
+  #MenuForMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .navImage2{
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+
+
+}
+
+#progress {
+    width: 100%;
+}
+
+#bar {
+    width: 0%;
+    height: 100%;
+    background-color: #885541;
+}

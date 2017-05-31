@@ -1,0 +1,37 @@
+  <div class="addButton">
+    <img class="photo1" id = "imageFile">
+    <div class="showForOption" id="fullMenu">
+      <form name="Optionform" action="" method="get">
+        <div class="optionform">
+          <input type="button" class="options" value="change tags" id = "changeTagBtn" onclick="changeTag(this.id, this.form)">
+          <hr class="optionLine">
+          <input type="button" class="options" value="add to favorites" id = "changeFavBtn" onclick="addToFavorites(this.id, this.form)">
+          <!--onclick="addToFavorites()"-->
+          <hr class="optionLine">
+          <input type="button" class="optionButton2" />
+        </div>
+      </form>
+    </div>
+
+    <form name="myform" action="" method="get">
+      <input type="button" class="buttons" id = "showFullMenuBtn" onclick="showFullMenu(this.id,this.form)" />
+    </form>
+  </div>
+
+
+  <!--for changing labels-->
+  <div class="labels">
+    <p class="labelList" id="labels">
+      <!-- for holding labels form database-->
+      <!--in js we add
+           <div>
+             <img>lable
+           </div-->
+    </p>
+
+    <div class="showInput" id="showForChange">
+      <input type="text" class="indilable" id="labelInput" />
+      <button id="addBtn" onclick="addLabels(this.id)">Add</button>
+    </div>
+
+  </div>

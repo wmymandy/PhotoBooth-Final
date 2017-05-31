@@ -1,0 +1,57 @@
+/*css for photobooth.html*/
+
+
+/*the font is not working!*/
+@font-face {
+  font-family:"GoudyStd","GoudyStd-Italic","GoudyStd-BoldItalic","GoudyStd-Bold";
+  src:url("photobooth/fontGoudy/GoudyStd.otf"),
+    url("photobooth/fontGoudy/GoudyStd-Italic.otf")，
+    url("photobooth/fontGoudy/GoudyStd-BoldItalic.otf")，
+    url("photobooth/fontGoudy/GoudyStd-Bold.otf")；
+  font-stretch: expanded;
+  font-style: normal;
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: #7B503F;
+  font-family: "GoudyStd","GoudyStd-Italic","GoudyStd-BoldItalic","GoudyStd-Bold";
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#welcome{
+  text-align: center;
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  /*align-items: baseline;*/
+  align-self: center;
+  background-color: #7B503F;
+  color: white;
+  margin: 30px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  border:1px solid black;
+}
+
+p{
+  margin: 0;
+  margin-top: 5px;
+  font-weight: 550;
+  font-size: 15pt;
+}

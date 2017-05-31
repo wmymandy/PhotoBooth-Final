@@ -1,0 +1,95 @@
+<!doctype HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Photebooth</title>
+  <link rel="stylesheet" type="text/css" href="photoboothMain.css">
+</head>
+
+<!--body onload="getDataBase()"-->
+<body onload="fetchPictures()">
+  <img id="headerImg" src="photobooth/photoboothLogo.png" alt="no image"/>
+
+  <hr id="divide">
+
+  <div id="MenuForMobile"> <!--menu for Mobile Version -->
+
+      <!-- Mobile Upload -->
+      <div class="MobileUploadList">
+        <button class="MobileBut" onclick="showUpload2()"><img class="navImage" src="photobooth/uploadIcon-01.png" alt="no image"></button>
+
+        <div id="MobileUpload">
+          <br>
+          <label for="fileSelector">choose file...</label>
+          <br>
+
+          <div id="fileName2" class="fileName">no file chosen</div>
+          <input type="file" id="fileSelector" onchange="chooseFile(this)">
+          <button id="MobileuploadButton" onclick="uploadImage()">upload</button>
+        </div>
+      </div>
+
+    <!-- Filter Upload -->
+    <div class="MobileFilterList">
+      <button class="MobileBut" onclick="showFilter3()"><img class="navImage" src="photobooth/filterIcon-01.png" alt="no image"></button>
+
+      <div id="MobileFilter">
+        <input id="Thirdfilter" type="search" placeholder="filter">
+        <div class="filterButtonList">
+          <button class="filterButton" onclick ="mobileLabelFilter()">enter</button>
+          <button class="filterButton" onclick="clearFilter2()">clear filter</button>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="MobileBut" onclick="favoriteFilter()"><img class="navImage2" src="photobooth/favoritesIcon.png" alt="no image"></button>
+  </div>
+
+  <main>
+
+    <div class="pictures" > <!-- contain all the photos -->
+
+    </div>
+
+    <nav id="menuBar"> <!--menu bar -->
+      <div class="nav"> <!-- upload -->
+        <img class="navImage" src="photobooth/uploadIcon-01.png" alt="no image">
+        <button class="firstLevel" onclick="showUpload()">upload</button>
+      </div>
+
+      <div id="showForUpload">
+          <label for="fileSelector">choose file...</label>
+          <br>
+
+          <div id="fileName" class="fileName">no file chosen</div>
+          <input type="file" id="fileSelector" onchange="chooseFile(this)">
+        <button id="uploadButton" onclick="uploadImage()">upload</button>
+      </div>
+
+      <div class="nav"> <!--filter -->
+        <img class="navImage" src="photobooth/filterIcon-01.png" alt="no image">
+        <button id="FilterWord" onclick="showFilter()"> filter </button>
+        <input id="filter" type="search" placeholder="filter" onclick="showFilter()">
+      </div>
+
+      <div id="showForFilter">
+        <input id="Secondfilter" type="search" placeholder="filter">
+        <div class="filterButtonList">
+          <button class="filterButton" onclick="labelFilter()">enter</button>
+          <button class="filterButton" onclick="clearFilter()">clear filter</button>
+        </div>
+      </div>
+
+      <div class="nav"> <!-- favorite -->
+        <img class="navImage2" src="photobooth/favoritesIcon.png" alt="no image">
+        <button class="firstLevel" onclick="favoriteFilter()">favorites</button>
+      </div>
+    </nav>
+  </main>
+  <script src="photoboothMain.js"></script>
+</body>
+
+</html>
